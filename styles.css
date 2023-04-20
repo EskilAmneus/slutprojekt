@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+}
+
+.page1-Container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #333030;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-bar{
+    width: 100%;
+    height: 10%;
+    background-color: #423c3c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-image-box{
+    width: 95%;
+    height: 70%;
+    background-color: white;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+
+
+
+ 
+  
+  
