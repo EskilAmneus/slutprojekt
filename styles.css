@@ -2,7 +2,7 @@
     margin: 0;
 }
 
-.page1-Container{
+.page-container{
     width: 100vw;
     height: 100vh;
     background-color: #333030;
@@ -11,23 +11,197 @@
     align-items: center;
 }
 
+body{
+    overflow-x: hidden;
+
+}
+
+
 .top-bar{
     width: 100%;
-    height: 10%;
+    height: 16%;
+    background-color: #423c3c;
+    padding-bottom: 1%;
+}
+
+.top-bar-box{
+    width: 100%;
+    height: 50%;
     background-color: #423c3c;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.main-image-box{
-    width: 95%;
-    height: 70%;
+
+.button-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    height: 100%;
+}
+
+.button{
+    width: 150px;
+    height: 100%;
+    border: none;
+    background-color: #423c3c;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20%;
+  }
+
+.button1{
+    width: 150px;
+    height: 100%;
+    border: none;
+    background-color: #423c3c;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 20%;    
+}
+
+.button:hover{
+    background-color: gray;
+}
+
+.button-img{
+    height: 50px;
+    width: auto;
+}
+
+.main-img-box{
+    width: 100%;
+    height: 75%;    
     background-color: white;
-    margin-top: 5%;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
 }
 
+.main-img{
+    width: 100%;
+    height: 100%;
+}
+
+.middle-box{
+    height: 8%;
+    width: 100%;
+}
+
+.content-container1{
+    height: 40%;
+    width: 80%;
+    background-image: url("bilder/army-img.png");
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    text-decoration: none;
+}
+
+.content-container2{
+    height: 40%;
+    width: 80%;
+    background-image: url("bilder/defence-img.png");
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    text-decoration: none;
+}
+
+.content-container3{
+    height: 40%;
+    width: 80%;
+    background-image: url("bilder/builder-base-img.png");
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    text-decoration: none;
+}
+
+.content-container4{
+    height: 40%;
+    width: 80%;
+    background-image: url("bilder/town-hall-img.png");
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    text-decoration: none;
+}
+
+.content-container5{
+    height: 40%;
+    width: 80%;
+    background-image: url("bilder/clan-capital-img.png");
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    text-decoration: none;
+}
+
+.box-text{
+    margin-top: 20px;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-box{
+    height: 30%;
+    width: 100%;
+}
+
+
+
+
+
+@media(max-width:1279px){
+    .main-img-box{
+        height: auto;
+    }
+}
+
+@media (max-width:1000px){
+    .button-box{
+        width: 95%;
+    }
+
+}
+
+@media(max-width:500px){
+    .button{
+        width: 40px;
+        font-size: 10px;
+    }
+    .button1{
+        width: 40px;
+    }
+    .button-img{
+        height: 35px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    
+}
+    
 
 
 
