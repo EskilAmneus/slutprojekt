@@ -240,9 +240,26 @@ h1{
     width: 100vw;
     height: 15vh;
 }
+
+#elixir-troops{
+    border-color: chartreuse;
+    border-style: solid;
+}
+
+#dark-elixir-troops{
+    border-color: crimson;
+    border-style: solid;
+}
   
+#super-troops{
+    border-color: darkorange;
+    border-style: solid;
+}
 
-
+#spells{
+    border-color: darkmagenta;
+    border-style: solid;
+}
 
 
 @media(max-width:1279px){
