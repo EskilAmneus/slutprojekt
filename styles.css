@@ -4,7 +4,7 @@
 
 .page-container{
     width: 100vw;
-    height: 100vh;
+    height: 350vh;
     background-color: #333030;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
 
 .page-container2{
     width: 100vw;
-    height: 300vh;
+    height: 150vh;
     background-color: #333030;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@ html, body {
 
 .top-bar{
     width: 100%;
-    height: 16%;
+    height: 4.571%;
     background-color: #423c3c;
     padding-bottom: 1%;
 }
@@ -93,7 +93,7 @@ html, body {
 
 .main-img-box{
     width: 100%;
-    height: 75%;    
+    height: 21.428%;    
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -105,12 +105,12 @@ html, body {
 }
 
 .middle-box{
-    height: 8%;
+    height: 2.285%;
     width: 100%;
 }
 
 .content-container1{
-    height: 13.33%;
+    height: 8.886%;
     width: 80%;
     background-image: url("bilder/army-img.png");
     background-repeat: no-repeat;
@@ -118,10 +118,12 @@ html, body {
     margin-top: 2.5%;
     margin-bottom: 2.5%;
     text-decoration: none;
+    max-width: 864px;
+    max-height: 287.928px;
 }
 
 .content-container2{
-    height: 13.33%;
+    height: 8.886%;
     width: 80%;
     background-image: url("bilder/defence-img.png");
     background-repeat: no-repeat;
@@ -129,10 +131,12 @@ html, body {
     margin-top: 2.5%;
     margin-bottom: 2.5%;
     text-decoration: none;
+    max-width: 864px;
+    max-height: 287.928px;
 }
 
 .content-container3{
-    height: 13.33%;
+    height: 8.886%;
     width: 80%;
     background-image: url("bilder/builder-base-img.png");
     background-repeat: no-repeat;
@@ -140,10 +144,12 @@ html, body {
     margin-top: 2.5%;
     margin-bottom: 2.5%;
     text-decoration: none;
+    max-width: 864px;
+    max-height: 287.928px;
 }
 
 .content-container4{
-    height: 13.33%;
+    height: 8.886%;
     width: 80%;
     background-image: url("bilder/town-hall-img.png");
     background-repeat: no-repeat;
@@ -151,10 +157,12 @@ html, body {
     margin-top: 2.5%;
     margin-bottom: 2.5%;
     text-decoration: none;
+    max-width: 864px;
+    max-height: 287.928px;
 }
 
 .content-container5{
-    height: 13.33%;
+    height: 8.886%;
     width: 80%;
     background-image: url("bilder/clan-capital-img.png");
     background-repeat: no-repeat;
@@ -162,6 +170,8 @@ html, body {
     margin-top: 2.5%;
     margin-bottom: 2.5%;
     text-decoration: none;
+    max-width: 864px;
+    max-height: 287.928px;
 }
 
 .box-text{
@@ -178,7 +188,7 @@ h1{
 }
 
 .bottom-box-container{
-    height: 25%;
+    height: 16.666%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -218,9 +228,11 @@ h1{
     margin-bottom:  5%;
 }
 
+
+
 .army-box{
     width: 100%;
-    height: 25%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,12 +273,26 @@ h1{
     border-style: solid;
 }
 
+#buildings{
+    height: 40%;
+}
+
+#traps{
+    height: 35%;
+}
+
 
 
 
 @media(max-width:1279px){
     .main-img-box{
         height: auto;
+    }
+}
+
+@media(min-width:1050px){
+    .troop-img{
+        height: 130px ;
     }
 }
 
@@ -291,6 +317,9 @@ h1{
     }
     .troop-img{
         height: 75px;
+    }
+    .middle-box{
+        height: 1.9%;
     }
 
 }
@@ -318,6 +347,10 @@ h1{
         height: 70px;
         padding-top: 3%;
     }
+    .middle-box{
+        height: 1%;
+    }
+    
     
     
 }
