@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>army-info</title>
+    <link rel="stylesheet" href="styles.css">
+    <main>
+
+    </main>
+</head>
+<body>
+    
+    <div class="page-container4">
+
+        <div class="top-bar"></div>
+        <div class="img-box2"><img class="img2" src="" alt=""></div>
+        <div class="middle-box" id="troop-text"><h1></h1></div>
+        
+        <div class="container">
+            <div class="half-box"></div>
+            <div class="half-box"></div>
+        </div>
+
+    </div>
+
+    <script>
+        // Get the URL parameters
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+
+        // Get the image source and troop name from the URL parameters
+        const imageSrc = urlParams.get('src');
+        const troopName = urlParams.get('name');
+
+        // Update the image source and troop name on the page
+        const imgElement = document.querySelector('.img2');
+        imgElement.src = imageSrc;
+
+        const h1Element = document.querySelector('#troop-text h1');
+        h1Element.textContent = troopName;
+    </script>
+
+</body>
+</html>
