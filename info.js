@@ -1,0 +1,1 @@
+const troopName = urlParams.get('name');

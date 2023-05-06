@@ -35,25 +35,7 @@
 
     
 
-    <script>
-
-        // Get the URL parameters
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-
-        // Get the image source and troop name from the URL parameters
-        const imageSrc = urlParams.get('src');
-        const troopName = urlParams.get('name');
-        
-
-        // Update the image source and troop name on the page
-        const imgElement = document.querySelector('.img2');
-        imgElement.src = imageSrc;
-
-        const h1Element = document.querySelector('#troop-text h1');
-        h1Element.textContent = troopName;
-    
-    </script>
+    <script src="script.js"></script>
 
     
 
