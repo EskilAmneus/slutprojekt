@@ -294,14 +294,18 @@ h1{
 
 #buildings{
     height: 40%;
+    border-style: solid;
+    border-color: darkgoldenrod;
 }
 
 #traps{
     height: 35%;
 }
 
-
-
+#traps-border{
+    border-style: solid;
+    border-color: indianred;
+}
 
 .page-container4{
     width: 100vw;
@@ -400,6 +404,7 @@ h1{
     justify-content: center;
     margin-bottom: 2%;
     background-color: #423c3c;
+    height: 10vh;
 }
 
 

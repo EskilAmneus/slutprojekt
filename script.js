@@ -91,6 +91,29 @@ r_skeletonTrap = "bilder/skeleton-trap.webp"
 r_airBomb = "bilder/air-bomb.webp"
 r_Xbow = "bilder/XBow1.png"
 
+r_barbarian = "bilder/barbarian.png"
+r_archer = "bilder/archer.png"
+r_goblin = "bilder/goblin.png"
+r_dragon = "bilder/dragon.webp"
+r_electroDragon = "bilder/electro-dragon.webp"
+r_balloon = "bilder/balloon.webp"
+r_minion = "bilder/minion.webp"
+r_pekka = "bilder/pekka.png"
+r_hogRider = "bilder/hog-rider.png"
+r_giant = "bilder/giant.png"
+r_wallBreaker = "bilder/wall-breaker.webp"
+r_superWallBreaker = "bilder/super-wall-breaker.webp"
+r_witch = "bilder/witch.png"
+r_batSpell = "bilder/bat-spell.webp"
+r_electroTitan = "bilder/electro-titan.webp"
+r_iceGolem = "bilder/ice-golem.webp"
+r_golem = "bilder/golem.webp"
+r_lavaHound = "bilder/lava-hound.webp"
+r_miner = "bilder/miner.webp"
+r_sneakyGoblin = "bilder/sneaky-goblin.webp"
+r_wizard = "bilder/wizard.webp"
+r_healer = "bilder/healer.webp"
+
 h_cannon = "army-product-page.html?src=bilder/cannon1.png&number=53"
 h_archerTower = "army-product-page.html?src=bilder/archer-tower1.webp&number=54"
 h_mortar = "army-product-page.html?src=bilder/mortar1.png&number=56"
@@ -110,6 +133,29 @@ h_monolith = "army-product-page.html?src=bilder/monolith1.webp&number=67"
 h_skeletonTrap = "army-product-page.html?src=bilder/skeleton-trap.webp&number=77"
 h_airBomb = "army-product-page.html?src=bilder/air-bomb.webp&number=74"
 h_Xbow = "army-product-page.html?src=bilder/XBow1.png&number=62"
+
+h_barbarian = "army-product-page.html?src=bilder/barbarian.png&number=0"
+h_archer = "army-product-page.html?src=bilder/archer.png&number=1"
+h_goblin = "army-product-page.html?src=bilder/goblin.png&number=3"
+h_dragon = "army-product-page.html?src=bilder/dragon.webp&number=8"
+h_electroDragon = "army-product-page.html?src=bilder/electro-dragon.webp&number=12"
+h_balloon = "army-product-page.html?src=bilder/balloon.webp&number=5"
+h_minion = "army-product-page.html?src=bilder/minion.webp&number=16"
+h_pekka = "army-product-page.html?src=bilder/pekka.png&number=9"
+h_hogRider = "army-product-page.html?src=bilder/hog-rider.png&number=17"
+h_giant = "army-product-page.html?src=bilder/giant.png&number=2"
+h_wallBreaker = "army-product-page.html?src=bilder/wall-breaker.webp&number=4"
+h_superWallBreaker = "army-product-page.html?src=bilder/super-wall-breaker.webp&number=28"
+h_witch = "army-product-page.html?src=bilder/witch.png&number=20"
+h_batSpell = "army-product-page.html?src=bilder/bat-spell.webp&number=52"
+h_electroTitan = "army-product-page.html?src=bilder/electro-titan.webp&number=15"
+h_iceGolem = "army-product-page.html?src=bilder/ice-golem.webp&number=23"
+h_golem = "army-product-page.html?src=bilder/golem.webp&number=19"
+h_lavaHound = "army-product-page.html?src=bilder/lava-hound.webp&number=21"
+h_miner = "army-product-page.html?src=bilder/miner.webp&number=11"
+h_sneakyGoblin = "army-product-page.html?src=bilder/sneaky-goblin.webp&number=27"
+h_wizard = "army-product-page.html?src=bilder/wizard.webp&number=6"
+h_healer = "army-product-page.html?src=bilder/healer.webp&number=7"
 
 if(Number == 0){
     sImg = r_cannon 
@@ -893,7 +939,373 @@ else if(Number == 52){
     wHref3 = ""
 }
 
+else if(Number == 53){
+    sImg = r_barbarian
+    sImg2 = r_archer
+    sImg3 = r_goblin
+    sHref = h_barbarian
+    sHref2 = h_archer
+    sHref3 = h_goblin
+    wImg = r_dragon
+    wImg2 = r_electroDragon
+    wImg3 = r_balloon
+    wHref = h_dragon
+    wHref2 = h_electroDragon
+    wHref3 = h_balloon
+}
 
+
+else if(Number == 54){
+    sImg = r_minion
+    sImg2 = r_goblin
+    sImg3 = r_barbarian
+    sHref = h_minion
+    sHref2 = h_goblin
+    sHref3 = h_barbarian
+    wImg = r_pekka
+    wImg2 = r_hogRider
+    wImg3 = r_giant
+    wHref = h_pekka
+    wHref2 = h_hogRider
+    wHref3 = h_giant
+}
+
+else if(Number == 55){
+    sImg = r_barbarian
+    sImg2 = r_archer
+    sImg3 = r_goblin
+    sHref = h_barbarian
+    sHref2 = h_archer
+    sHref3 = h_goblin
+    wImg = r_wallBreaker
+    wImg2 = r_superWallBreaker
+    wImg3 = r_balloon
+    wHref = h_wallBreaker
+    wHref2 = h_superWallBreaker
+    wHref3 = h_balloon
+}
+else if(Number == 56){
+    sImg = r_barbarian
+    sImg2 = r_archer
+    sImg3 = r_goblin
+    sHref = h_barbarian
+    sHref2 = h_archer
+    sHref3 = h_goblin
+    wImg = r_dragon
+    wImg2 = r_electroDragon
+    wImg3 = r_balloon
+    wHref = h_dragon
+    wHref2 = h_electroDragon
+    wHref3 = h_balloon
+}
+else if(Number == 57){
+    sImg = r_dragon
+    sImg2 = r_electroDragon
+    sImg3 = r_balloon
+    sHref = h_dragon
+    sHref2 = h_electroDragon
+    sHref3 = h_balloon
+    wImg = r_giant
+    wImg2 = r_hogRider
+    wImg3 = r_pekka
+    wHref = h_giant
+    wHref2 = h_hogRider
+    wHref3 = h_pekka
+}
+else if(Number == 58){
+    sImg = r_barbarian
+    sImg2 = r_witch
+    sImg3 = r_batSpell
+    sHref = h_barbarian
+    sHref2 = h_witch
+    sHref3 = h_batSpell
+    wImg = r_pekka
+    wImg2 = r_dragon
+    wImg3 = r_balloon
+    wHref = h_pekka
+    wHref2 = h_dragon
+    wHref3 = h_balloon
+}
+else if(Number == 59){
+    sImg = r_balloon
+    sImg2 = r_electroDragon
+    sImg3 = r_dragon
+    sHref = h_balloon
+    sHref2 = h_electroDragon
+    sHref3 = h_dragon
+    wImg = r_pekka
+    wImg2 = r_hogRider
+    wImg3 = r_giant
+    wHref = h_pekka
+    wHref2 = h_hogRider
+    wHref3 = h_giant
+}
+else if(Number == 60){
+    sImg = r_pekka
+    sImg2 = r_barbarian
+    sImg3 = r_minion
+    sHref = h_pekka
+    sHref2 = h_barbarian
+    sHref3 = h_minion
+    wImg = r_giant
+    wImg2 = r_dragon
+    wImg3 = r_electroDragon
+    wHref = h_giant
+    wHref2 = h_dragon
+    wHref3 = h_electroDragon
+}
+else if(Number == 61){
+    sImg = r_hogRider
+    sImg2 = r_barbarian
+    sImg3 = r_giant
+    sHref = h_hogRider
+    sHref2 = h_barbarian
+    sHref3 = h_giant
+    wImg = r_dragon
+    wImg2 = r_electroDragon
+    wImg3 = r_balloon
+    wHref = h_dragon
+    wHref2 = h_electroDragon
+    wHref3 = h_balloon
+}
+else if(Number == 62){
+    sImg = r_electroTitan
+    sImg2 = r_witch
+    sImg3 = r_balloon
+    sHref = h_electroTitan
+    sHref2 = h_witch
+    sHref3 = h_balloon
+    wImg = r_iceGolem
+    wImg2 = r_golem
+    wImg3 = r_lavaHound
+    wHref = h_iceGolem
+    wHref2 = h_golem
+    wHref3 = h_lavaHound
+}
+else if(Number == 63){
+    sImg = r_electroDragon
+    sImg2 = r_dragon
+    sImg3 = r_pekka
+    sHref = h_electroDragon
+    sHref2 = h_dragon
+    sHref3 = h_pekka
+    wImg = r_witch
+    wImg2 = r_hogRider
+    wImg3 = r_balloon
+    wHref = h_witch
+    wHref2 = h_hogRider
+    wHref3 = h_balloon
+}
+else if(Number == 64){
+    sImg = r_electroDragon
+    sImg2 = r_dragon
+    sImg3 = r_giant
+    sHref = h_electroDragon
+    sHref2 = h_dragon
+    sHref3 = h_giant
+    wImg = r_miner
+    wImg2 = ""
+    wImg3 = ""
+    wHref = h_miner
+    wHref2 = ""
+    wHref3 = ""
+}
+else if(Number == 65){
+    sImg = r_hogRider
+    sImg2 = r_balloon
+    sImg3 = r_miner
+    sHref = h_hogRider
+    sHref2 = h_balloon
+    sHref3 = h_miner
+    wImg = r_iceGolem
+    wImg2 = r_electroTitan
+    wImg3 = ""
+    wHref = h_iceGolem
+    wHref2 = h_electroTitan
+    wHref3 = ""
+}
+else if(Number == 66){
+    sImg = ""
+    sImg2 = ""
+    sImg3 = ""
+    sHref = ""
+    sHref2 = ""
+    sHref3 = ""
+    wImg = ""
+    wImg2 = ""
+    wImg3 = ""
+    wHref = ""
+    wHref2 = ""
+    wHref3 = ""
+}
+else if(Number == 67){
+    sImg = r_electroTitan
+    sImg2 = r_electroDragon
+    sImg3 = r_golem
+    sHref = h_electroTitan
+    sHref2 = h_electroDragon
+    sHref3 = h_golem
+    wImg = r_witch
+    wImg2 = r_hogRider
+    wImg3 = r_miner
+    wHref = h_witch
+    wHref2 = h_hogRider
+    wHref3 = h_miner
+}
+else if(Number == 68){
+    sImg = r_pekka
+    sImg2 = r_hogRider
+    sImg3 = r_balloon
+    sHref = h_pekka
+    sHref2 = h_hogRider
+    sHref3 = h_balloon
+    wImg = r_sneakyGoblin
+    wImg2 = r_electroDragon
+    wImg3 = r_dragon
+    wHref = h_sneakyGoblin
+    wHref2 = h_electroDragon
+    wHref3 = h_dragon
+}
+else if(Number == 69){
+    sImg = r_witch
+    sImg2 = r_hogRider
+    sImg3 = r_balloon
+    sHref = h_witch
+    sHref2 = h_hogRider
+    sHref3 = h_balloon
+    wImg = r_electroDragon
+    wImg2 = r_sneakyGoblin
+    wImg3 = ""
+    wHref = h_electroDragon
+    wHref2 = h_sneakyGoblin
+    wHref3 = ""
+}
+else if(Number == 70){
+    sImg = r_witch
+    sImg2 = r_hogRider
+    sImg3 = r_balloon
+    sHref = h_witch
+    sHref2 = h_hogRider
+    sHref3 = h_balloon
+    wImg = r_electroDragon
+    wImg2 = r_sneakyGoblin
+    wImg3 = ""
+    wHref = h_electroDragon
+    wHref2 = h_sneakyGoblin
+    wHref3 = ""
+}
+else if(Number == 71){
+    sImg = r_witch
+    sImg2 = r_hogRider
+    sImg3 = r_balloon
+    sHref = h_witch
+    sHref2 = h_hogRider
+    sHref3 = h_balloon
+    wImg = r_electroDragon
+    wImg2 = r_sneakyGoblin
+    wImg3 = ""
+    wHref = h_electroDragon
+    wHref2 = h_sneakyGoblin
+    wHref3 = ""
+}
+else if(Number == 72){
+    sImg = r_barbarian
+    sImg2 = r_archer
+    sImg3 = r_hogRider
+    sHref = h_barbarian
+    sHref2 = h_archer
+    sHref3 = h_hogRider
+    wImg = r_goblin
+    wImg2 = r_sneakyGoblin
+    wImg3 = r_pekka
+    wHref = h_goblin
+    wHref2 = h_sneakyGoblin
+    wHref3 = h_pekka
+}
+else if(Number == 73){
+    sImg = r_hogRider
+    sImg2 = r_wizard
+    sImg3 = r_witch
+    sHref = h_hogRider
+    sHref2 = h_wizard
+    sHref3 = h_witch
+    wImg = r_goblin
+    wImg2 = r_sneakyGoblin
+    wImg3 = r_pekka
+    wHref = h_goblin
+    wHref2 = h_sneakyGoblin
+    wHref3 = h_pekka
+}
+else if(Number == 74){
+    sImg = r_healer
+    sImg2 = r_balloon
+    sImg3 = r_dragon
+    sHref = h_healer
+    sHref2 = h_balloon
+    sHref3 = h_dragon
+    wImg = r_minion
+    wImg2 = r_giant
+    wImg3 = r_barbarian
+    wHref = h_minion
+    wHref2 = h_giant
+    wHref3 = h_barbarian
+}
+else if(Number == 75){
+    sImg = r_hogRider
+    sImg2 = r_witch
+    sImg3 = r_giant
+    sHref = h_hogRider
+    sHref2 = h_witch
+    sHref3 = h_giant
+    wImg = r_dragon
+    wImg2 = r_goblin
+    wImg3 = r_sneakyGoblin
+    wHref = h_dragon
+    wHref2 = h_goblin
+    wHref3 = h_sneakyGoblin
+}
+else if(Number == 76){
+    sImg = r_electroDragon
+    sImg2 = r_dragon
+    sImg3 = r_healer
+    sHref = h_electroDragon
+    sHref2 = h_dragon
+    sHref3 = h_healer
+    wImg = r_minion
+    wImg2 = r_barbarian
+    wImg3 = r_archer
+    wHref = h_minion
+    wHref2 = h_barbarian
+    wHref3 = h_archer
+}
+else if(Number == 77){
+    sImg = r_pekka
+    sImg2 = r_electroDragon
+    sImg3 = r_healer
+    sHref = h_pekka
+    sHref2 = h_electroDragon
+    sHref3 = h_healer
+    wImg = r_electroTitan
+    wImg2 = r_dragon
+    wImg3 = r_wizard
+    wHref = h_electroTitan
+    wHref2 = h_dragon
+    wHref3 = h_wizard
+}
+else if(Number == 78){
+    sImg = r_electroDragon
+    sImg2 = r_dragon
+    sImg3 = r_witch
+    sHref = h_electroDragon
+    sHref2 = h_dragon
+    sHref3 = h_witch
+    wImg = r_pekka
+    wImg2 = ""
+    wImg3 = ""
+    wHref = h_pekka
+    wHref2 = ""
+    wHref3 = ""
+}
 // Update the image source and troop name on the page
 const imgElement = document.querySelector('.img2');
 imgElement.src = imageSrc;
@@ -919,10 +1331,10 @@ const hrefElement1 = document.querySelector('#s-href');
 hrefElement1.href = sHref;
 
 const hrefElement2 = document.querySelector('#s-href2');
-hrefElement2.href = sHref;
+hrefElement2.href = sHref2;
 
 const hrefElement3 = document.querySelector('#s-href3');
-hrefElement3.href = sHref;
+hrefElement3.href = sHref3;
 //________________________________________________________
 
 const imgElement4 = document.querySelector('#w-img');
