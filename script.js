@@ -8,7 +8,7 @@ const imageSrc = urlParams.get('src');
 const Number = urlParams.get('number');
 
 
-troop = ["Barbar","Bågskytt","Jätte","Troll","Murförstörare","Ballong","Trollkarl","Helare","Drake","P.E.E.K.A","Bäbisdrake","Gruvarbetare","Elektrodrake","Yeti","Drakryttare","Elektrotitan","Minion","Grisryttare","Valkyria","Golem","Häxa","Lavahund","Bowlare","Is golem","Huvudjagare","Superbarbar","Superbågskytt","Smygtroll","Supermurförstörare","Superjätte","Raketballong","Supertrollkarl","Superdrake","Infernodrake","Superminion","Supervalkyria","Superhäxa","Ishund","Superbowlare","Supergruvarberare","Blixttrolldryck","Läketrolldryck","Arghetstrolldryck","Hopptrolldryck","Frystrolldryck","Clontrolldryck","Osynlighetstrolldryck","Återkallelsetrolldryck","Gifttrolldryck","Jordbävningstrolldryck","Snabbhetstrolldryck","Skelettrolldryck","Fladdermustrolldryck"];
+troop = ["Barbar","Bågskytt","Jätte","Troll","Murförstörare","Ballong","Trollkarl","Helare","Drake","P.E.E.K.A","Bäbisdrake","Gruvarbetare","Elektrodrake","Yeti","Drakryttare","Elektrotitan","Minion","Grisryttare","Valkyria","Golem","Häxa","Lavahund","Bowlare","Is golem","Huvudjagare","Superbarbar","Superbågskytt","Smygtroll","Supermurförstörare","Superjätte","Raketballong","Supertrollkarl","Superdrake","Infernodrake","Superminion","Supervalkyria","Superhäxa","Ishund","Superbowlare","Supergruvarberare","Blixttrolldryck","Läketrolldryck","Arghetstrolldryck","Hopptrolldryck","Frystrolldryck","Clontrolldryck","Osynlighetstrolldryck","Återkallelsetrolldryck","Gifttrolldryck","Jordbävningstrolldryck","Snabbhetstrolldryck","Skelettrolldryck","Fladdermustrolldryck","Kanon","Bågskyttetorn","Mur","Mortar","Luftförsvar","Trollkarlstorn","Luftblåsare","Gömd tesla","Bombtorn","X-bow","Infernotorn","Örnartelleri","Scatterskjutare","Trolldryckstorn","Monolith","Rådhus nivå-12","Rådhus nivå-13","Rådhus nivå-14","Rådhus nivå-15","Bomb","Fjäderfälla","Luftmina","Jättebomb","Sökande luftmina","Skelettfälla","Virvelvindfälla"];
 troopName = troop[Number];
 
 
@@ -67,13 +67,831 @@ skeletonSpell = ""
 batSpell = ""
 
 
-troop_info_list = [barbarian,archer,giant,goblin,wallBreaker,balloon,wizard,healer,dragon,pekka,babyDragon,miner,electroDragon,yeti,dragonRider,electroTitan,minion,hogRider,valkyrie,golem,witch,lavaHound,bowler,iceGolem,headhunter,superBarbarian,superArcher,sneakyGoblin,superWallBreaker,superGiant,rocketBalloon,superWizard,superDragon,infernoDragon,superMinion,superValkyrie,superWitch,iceHound,superBowler,superMiner,lightningSpell,healingSpell,rageSpell,jumpSpell,freezeSpell,cloneSpell,invisibilitySpell,recallSpell,poisonSpell,earthquakeSpell,hasteSpell,skeletonSpell,batSpell];
+troop_info_list = [barbarian,archer,giant,goblin,wallBreaker,balloon,wizard,healer,dragon,pekka,babyDragon,miner,electroDragon,yeti,dragonRider,electroTitan,minion,hogRider,valkyrie,golem,witch,lavaHound,bowler,iceGolem,headhunter,superBarbarian,superArcher,sneakyGoblin,superWallBreaker,superGiant,rocketBalloon,superWizard,superDragon,infernoDragon,superMinion,superValkyrie,superWitch,iceHound,superBowler,superMiner,lightningSpell,healingSpell,rageSpell,jumpSpell,freezeSpell,cloneSpell,invisibilitySpell,recallSpell,poisonSpell,earthquakeSpell,hasteSpell,skeletonSpell,batSpell,];
 
 troopInfo = troop_info_list[Number];
 
+r_cannon = "bilder/cannon1.png"
+r_archerTower = "bilder/archer-tower1.webp"
+r_mortar = "bilder/mortar1.png"
+r_wizardTower = "bilder/wizard-tower1.png"
+r_bombTower = "bilder/bomb-tower1.webp"
+r_eagleArtillery = "bilder/eagle-artillery1.webp"
+r_scatterShot = "bilder/Scattershot1.webp"
+r_springTrap = "bilder/spring-trap.webp"
+r_giantBomb = "bilder/giant-bomb.webp"
+r_bomb = "bilder/bomb.png"
+r_wall ="bilder/wall1.png"
+r_airDefence = "bilder/air-defence1.webp"
+r_seekingAirMine = "bilder/seeking-air-mine.webp"
+r_hiddenTesla = "bilder/hidden-tesla1.png"
+r_infernoTower = "bilder/inferno-tower1.png"
+r_monolith = "bilder/monolith1.webp"
+r_skeletonTrap = "bilder/skeleton-trap.webp"
+r_airBomb = "bilder/air-bomb.webp"
+r_Xbow = "bilder/XBow1.png"
 
+h_cannon = "army-product-page.html?src=bilder/cannon1.png&number=53"
+h_archerTower = "army-product-page.html?src=bilder/archer-tower1.webp&number=54"
+h_mortar = "army-product-page.html?src=bilder/mortar1.png&number=56"
+h_wizardTower = "army-product-page.html?src=bilder/wizard-tower1.png&number=58"
+h_bombTower = "army-product-page.html?src=bilder/bomb-tower1.webp&number=61"
+h_eagleArtillery = "army-product-page.html?src=bilder/eagle-artillery1.webp&number=64"
+h_scatterShot = "army-product-page.html?src=bilder/scattershot1.webp&number=65"
+h_springTrap = "army-product-page.html?src=bilder/spring-trap.webp&number=73"
+h_giantBomb = "army-product-page.html?src=bilder/giant-bomb.webp&number=75"
+h_bomb = "army-product-page.html?src=bilder/bomb.png&number=72"
+h_wall = "army-product-page.html?src=bilder/wall1.png&number=55"
+h_airDefence = "army-product-page.html?src=bilder/air-defence1.webp&number=57"
+h_seekingAirMine = "army-product-page.html?src=bilder/seeking-air-mine.webp&number=76"
+h_hiddenTesla = "army-product-page.html?src=bilder/hidden-tesla.png&number=60"
+h_infernoTower = "army-product-page.html?src=bilder/inferno-tower1.png&number=63"
+h_monolith = "army-product-page.html?src=bilder/monolith1.webp&number=67"
+h_skeletonTrap = "army-product-page.html?src=bilder/skeleton-trap.webp&number=77"
+h_airBomb = "army-product-page.html?src=bilder/air-bomb.webp&number=74"
+h_Xbow = "army-product-page.html?src=bilder/XBow1.png&number=62"
 
+if(Number == 0){
+    sImg = r_cannon 
+    sImg2 = r_archerTower
+    sImg3 = ""
+    sHref = h_cannon 
+    sHref2 = h_archerTower 
+    sHref3 = ""
+    wImg = r_mortar 
+    wImg2 = r_wizardTower
+    wImg3 = r_bombTower
+    wHref = h_mortar
+    wHref2 = h_wizardTower
+    wHref3 = h_bombTower
+}
+else if(Number == 1){
+    sImg = r_cannon
+    sImg2 = r_archerTower
+    sImg3 = ""
+    sHref = h_cannon 
+    sHref2 = h_archerTower 
+    sHref3 = ""
+    wImg = r_mortar 
+    wImg2 = r_wizardTower
+    wImg3 = r_bombTower
+    wHref = h_mortar
+    wHref2 = h_wizardTower
+    wHref3 = h_bombTower
+}
+else if(Number == 2){
+    sImg = r_cannon
+    sImg2 = r_archerTower
+    sImg3 = r_wizardTower
+    sHref = h_cannon 
+    sHref2 = h_archerTower 
+    sHref3 = h_wizardTower
+    wImg = r_eagleArtillery 
+    wImg2 = r_scatterShot
+    wImg3 = r_bombTower
+    wHref = h_eagleArtillery
+    wHref2 = h_scatterShot
+    wHref3 = h_bombTower
+}
+else if(Number == 3){
+    sImg = r_springTrap
+    sImg2 = r_giantBomb
+    sImg3 = r_bomb
+    sHref = h_springTrap
+    sHref2 = h_giantBomb
+    sHref3 = h_bomb
+    wImg = r_mortar
+    wImg2 = r_wizardTower
+    wImg3 = r_bombTower
+    wHref = h_mortar
+    wHref2 = h_wizardTower
+    wHref3 = h_bombTower
+}
 
+else if(Number == 4){
+    sImg = r_wall
+    sImg2 = ""
+    sImg3 = ""
+    sHref = h_wall
+    sHref2 = ""
+    sHref3 = ""
+    wImg = r_mortar
+    wImg2 = ""
+    wImg3 = ""
+    wHref = h_mortar
+    wHref2 = ""
+    wHref3 = ""
+}
+
+else if(Number == 5){
+    sImg = r_cannon
+    sImg2 = r_mortar
+    sImg3 = r_bombTower
+    sHref = h_cannon
+    sHref2 = h_mortar
+    sHref3 = h_bombTower
+    wImg = r_airDefence
+    wImg2 = r_seekingAirMine
+    wImg3 = r_scatterShot
+    wHref = h_airDefence
+    wHref2 = h_seekingAirMine
+    wHref3 = h_scatterShot
+}
+
+else if(Number == 6){
+    sImg = r_cannon
+    sImg2 = r_hiddenTesla
+    sImg3 = r_airDefence
+    sHref = h_cannon
+    sHref2 = h_hiddenTesla
+    sHref3 = h_airDefence
+    wImg = r_mortar
+    wImg2 = r_scatterShot
+    wImg3 = r_eagleArtillery
+    wHref = h_mortar
+    wHref2 = h_scatterShot
+    wHref3 = h_eagleArtillery
+}
+
+else if(Number == 7){
+    sImg = ""
+    sImg2 = ""
+    sImg3 = ""
+    sHref = ""
+    sHref2 = ""
+    sHref3 = ""
+    wImg = r_airDefence
+    wImg2 = r_archerTower
+    wImg3 = r_seekingAirMine
+    wHref = h_airDefence
+    wHref2 = h_archerTower
+    wHref3 = h_seekingAirMine
+}
+
+else if(Number == 8){
+    sImg = r_cannon
+    sImg2 = r_mortar
+    sImg3 = r_bombTower
+    sHref = h_cannon
+    sHref2 = h_mortar
+    sHref3 = h_bombTower
+    wImg = r_airDefence
+    wImg2 = r_infernoTower
+    wImg3 = r_scatterShot
+    wHref = h_airDefence
+    wHref2 = h_infernoTower
+    wHref3 = h_scatterShot
+}
+
+else if(Number == 9){
+    sImg = r_cannon
+    sImg2 = r_archerTower
+    sImg3 = r_mortar
+    sHref = h_cannon
+    sHref2 = h_archerTower
+    sHref3 = h_mortar
+    wImg = r_infernoTower
+    wImg2 = r_hiddenTesla
+    wImg3 = r_monolith
+    wHref = h_infernoTower
+    wHref2 = h_hiddenTesla
+    wHref3 = h_monolith
+}
+
+else if(Number == 10){
+    sImg = r_cannon
+    sImg2 = r_mortar
+    sImg3 = r_bombTower
+    sHref = h_cannon
+    sHref2 = h_mortar
+    sHref3 = h_bombTower
+    wImg = r_airDefence
+    wImg2 = r_seekingAirMine
+    wImg3 = r_archerTower
+    wHref = h_airDefence
+    wHref2 = h_seekingAirMine
+    wHref3 = h_archerTower
+}
+
+else if(Number == 11){
+    sImg = r_wall
+    sImg2 = r_eagleArtillery
+    sImg3 = r_airDefence
+    sHref = h_wall
+    sHref2 = h_eagleArtillery
+    sHref3 = h_airDefence
+    wImg = r_scatterShot
+    wImg2 = r_giantBomb
+    wImg3 = ""
+    wHref = h_scatterShot
+    wHref2 = h_giantBomb
+    wHref3 = ""
+}
+
+else if(Number == 12){
+    sImg = r_cannon
+    sImg2 = r_mortar
+    sImg3 = r_bombTower
+    sHref = h_cannon
+    sHref2 = h_mortar
+    sHref3 = h_bombTower
+    wImg = r_infernoTower
+    wImg2 = r_monolith
+    wImg3 = r_airDefence
+    wHref = h_infernoTower
+    wHref2 = h_monolith
+    wHref3 = h_airDefence
+}
+
+else if(Number == 13){
+    sImg = r_airDefence
+    sImg2 = r_archerTower
+    sImg3 = r_cannon
+    sHref = h_airDefence
+    sHref2 = h_archerTower
+    sHref3 = h_cannon
+    wImg = r_eagleArtillery
+    wImg2 = r_scatterShot
+    wImg3 = r_monolith
+    wHref = h_eagleArtillery
+    wHref2 = h_scatterShot
+    wHref3 = h_monolith
+}
+
+else if(Number == 14){
+    sImg = r_wall
+    sImg2 = r_cannon
+    sImg3 = r_mortar
+    sHref = h_wall
+    sHref2 = h_cannon
+    sHref3 = h_mortar
+    wImg = r_monolith
+    wImg2 = r_infernoTower
+    wImg3 = r_seekingAirMine
+    wHref = h_monolith
+    wHref2 = h_infernoTower
+    wHref3 = h_seekingAirMine
+}
+
+else if(Number == 15){
+    sImg = r_skeletonTrap
+    sImg2 = r_archerTower
+    sImg3 = r_airDefence
+    sHref = h_skeletonTrap
+    sHref2 = h_archerTower
+    sHref3 = h_airDefence
+    wImg = r_monolith
+    wImg2 = r_infernoTower
+    wImg3 = r_scatterShot
+    wHref = h_monolith
+    wHref2 = h_infernoTower
+    wHref3 = h_scatterShot
+}
+
+else if(Number == 16){
+    sImg = r_airBomb
+    sImg2 = r_seekingAirMine
+    sImg3 = r_cannon
+    sHref = h_airBomb
+    sHref2 = h_seekingAirMine
+    sHref3 = h_cannon
+    wImg = r_archerTower
+    wImg2 = r_airDefence
+    wImg3 = r_wizardTower
+    wHref = h_archerTower
+    wHref2 = h_airDefence
+    wHref3 = h_wizardTower
+}
+
+else if(Number == 17){
+    sImg = r_wall
+    sImg2 = r_airDefence
+    sImg3 = r_archerTower
+    sHref = h_wall
+    sHref2 = h_airDefence
+    sHref3 = h_archerTower
+    wImg = r_springTrap
+    wImg2 = r_bombTower
+    wImg3 = r_scatterShot
+    wHref = h_springTrap
+    wHref2 = h_bombTower
+    wHref3 = h_scatterShot
+}
+
+else if(Number == 18){
+    sImg = r_airDefence
+    sImg2 = r_cannon
+    sImg3 = r_archerTower
+    sHref = h_airDefence
+    sHref2 = h_cannon
+    sHref3 = h_archerTower
+    wImg = r_eagleArtillery
+    wImg2 = r_scatterShot
+    wImg3 = r_bombTower
+    wHref = h_eagleArtillery
+    wHref2 = h_scatterShot
+    wHref3 = h_bombTower
+}
+
+else if(Number == 19){
+    sImg = r_cannon
+    sImg2 = r_wizardTower
+    sImg3 = r_airDefence
+    sHref = h_cannon
+    sHref2 = h_wizardTower
+    sHref3 = h_airDefence
+    wImg = r_monolith
+    wImg2 = r_infernoTower
+    wImg3 = r_scatterShot
+    wHref = h_monolith
+    wHref2 = h_infernoTower
+    wHref3 = h_scatterShot
+}
+
+else if(Number == 20){
+    sImg = r_infernoTower
+    sImg2 = r_monolith
+    sImg3 = r_cannon
+    sHref = h_infernoTower
+    sHref2 = h_monolith
+    sHref3 = h_cannon
+    wImg = r_bombTower
+    wImg2 = r_wizardTower
+    wImg3 = r_scatterShot
+    wHref = h_bombTower
+    wHref2 = h_wizardTower
+    wHref3 = h_scatterShot
+}
+
+else if(Number == 21){
+    sImg = r_airDefence
+    sImg2 = ""
+    sImg3 = ""
+    sHref = h_airDefence
+    sHref2 = ""
+    sHref3 = ""
+    wImg = r_airDefence
+    wImg2 = r_seekingAirMine
+    wImg3 = r_infernoTower
+    wHref = h_airDefence
+    wHref2 = h_seekingAirMine
+    wHref3 = h_infernoTower
+}
+
+else if(Number == 22){
+    sImg = r_infernoTower
+    sImg2 = r_bombTower
+    sImg3 = r_airDefence
+    sHref = h_infernoTower
+    sHref2 = h_bombTower
+    sHref3 = h_airDefence
+    wImg = r_eagleArtillery
+    wImg2 = r_scatterShot
+    wImg3 = ""
+    wHref = h_eagleArtillery
+    wHref2 = h_scatterShot
+    wHref3 = ""
+}
+
+else if(Number == 23){
+    sImg = r_infernoTower
+    sImg2 = r_Xbow
+    sImg3 = ""
+    sHref = h_infernoTower
+    sHref2 = h_Xbow
+    sHref3 = ""
+    wImg = r_monolith
+    wImg2 = r_archerTower
+    wImg3 = r_eagleArtillery
+    wHref = h_monolith
+    wHref2 = h_archerTower
+    wHref3 = h_eagleArtillery
+}
+
+else if(Number == 24){
+    sImg = ""
+    sImg2 = ""
+    sImg3 = ""
+    sHref = ""
+    sHref2 = ""
+    sHref3 = ""
+    wImg = r_cannon
+    wImg2 = r_archerTower
+    wImg3 = r_Xbow
+    wHref = h_cannon
+    wHref2 = h_archerTower
+    wHref3 = h_Xbow
+}
+
+else if(Number == 25){
+    sImg = r_airDefence
+    sImg2 = r_wall
+    sImg3 = r_wizardTower
+    sHref = h_airDefence
+    sHref2 = r_wall
+    sHref3 = r_wizardTower
+    wImg = r_Xbow
+    wImg2 = r_eagleArtillery
+    wImg3 = r_scatterShot
+    wHref = h_Xbow
+    wHref2 = h_eagleArtillery
+    wHref3 = h_scatterShot
+}
+
+else if(Number == 26){
+    sImg = r_archerTower
+    sImg2 = r_wizardTower
+    sImg3 = r_cannon
+    sHref = h_archerTower
+    sHref2 = h_wizardTower
+    sHref3 = h_cannon
+    wImg = r_scatterShot
+    wImg2 = r_eagleArtillery
+    wImg3 = ""
+    wHref = h_scatterShot
+    wHref2 = h_eagleArtillery
+    wHref3 = ""
+}
+
+else if(Number == 27){
+    sImg = r_springTrap
+    sImg2 = r_giantBomb
+    sImg3 = r_bomb
+    sHref = h_springTrap
+    sHref2 = h_giantBomb
+    sHref3 = h_bomb
+    wImg = r_mortar
+    wImg2 = r_wizardTower
+    wImg3 = r_bombTower
+    wHref = h_mortar
+    wHref2 = h_wizardTower
+    wHref3 = h_bombTower
+}
+
+else if(Number == 28){
+    sImg = r_wall
+    sImg2 = ""
+    sImg3 = ""
+    sHref = h_wall
+    sHref2 = ""
+    sHref3 = ""
+    wImg = ""
+    wImg2 = ""
+    wImg3 = ""
+    wHref = ""
+    wHref2 = ""
+    wHref3 = ""
+}
+
+else if(Number == 29){
+    sImg = r_cannon
+    sImg2 = r_archerTower
+    sImg3 = r_wizardTower
+    sHref = h_cannon 
+    sHref2 = h_archerTower 
+    sHref3 = h_wizardTower
+    wImg = r_eagleArtillery 
+    wImg2 = r_scatterShot
+    wImg3 = r_bombTower
+    wHref = h_eagleArtillery
+    wHref2 = h_scatterShot
+    wHref3 = h_bombTower
+}
+
+else if(Number == 30){
+    sImg = r_cannon
+    sImg2 = r_mortar
+    sImg3 = r_bombTower
+    sHref = h_cannon
+    sHref2 = h_mortar
+    sHref3 = h_bombTower
+    wImg = r_airDefence
+    wImg2 = r_seekingAirMine
+    wImg3 = r_scatterShot
+    wHref = h_airDefence
+    wHref2 = h_seekingAirMine
+    wHref3 = h_scatterShot
+}
+
+else if(Number == 31){
+    sImg = r_cannon
+    sImg2 = r_hiddenTesla
+    sImg3 = r_airDefence
+    sHref = h_cannon
+    sHref2 = h_hiddenTesla
+    sHref3 = h_airDefence
+    wImg = r_mortar
+    wImg2 = r_scatterShot
+    wImg3 = r_eagleArtillery
+    wHref = h_mortar
+    wHref2 = h_scatterShot
+    wHref3 = h_eagleArtillery
+}
+
+else if(Number == 32){
+    sImg = r_cannon
+    sImg2 = r_mortar
+    sImg3 = r_bombTower
+    sHref = h_cannon
+    sHref2 = h_mortar
+    sHref3 = h_bombTower
+    wImg = r_airDefence
+    wImg2 = r_infernoTower
+    wImg3 = r_scatterShot
+    wHref = h_airDefence
+    wHref2 = h_infernoTower
+    wHref3 = h_scatterShot
+}
+
+else if(Number == 33){
+    sImg = r_cannon
+    sImg2 = r_mortar
+    sImg3 = r_bombTower
+    sHref = h_cannon
+    sHref2 = h_mortar
+    sHref3 = h_bombTower
+    wImg = r_airDefence
+    wImg2 = r_seekingAirMine
+    wImg3 = r_archerTower
+    wHref = h_airDefence
+    wHref2 = h_seekingAirMine
+    wHref3 = h_archerTower
+}
+
+else if(Number == 34){
+    sImg = r_airBomb
+    sImg2 = r_seekingAirMine
+    sImg3 = r_cannon
+    sHref = h_airBomb
+    sHref2 = h_seekingAirMine
+    sHref3 = h_cannon
+    wImg = r_archerTower
+    wImg2 = r_airDefence
+    wImg3 = r_wizardTower
+    wHref = h_archerTower
+    wHref2 = h_airDefence
+    wHref3 = h_wizardTower
+}
+
+else if(Number == 35){
+    sImg = r_airDefence
+    sImg2 = r_cannon
+    sImg3 = r_archerTower
+    sHref = h_airDefence
+    sHref2 = h_cannon
+    sHref3 = h_archerTower
+    wImg = r_eagleArtillery
+    wImg2 = r_scatterShot
+    wImg3 = r_bombTower
+    wHref = h_eagleArtillery
+    wHref2 = h_scatterShot
+    wHref3 = h_bombTower
+}
+
+else if(Number == 36){
+    sImg = r_Xbow
+    sImg2 = r_monolith
+    sImg3 = r_cannon
+    sHref = h_Xbow
+    sHref2 = h_monolith
+    sHref3 = h_cannon
+    wImg = r_bombTower
+    wImg2 = r_wizardTower
+    wImg3 = r_scatterShot
+    wHref = h_bombTower
+    wHref2 = h_wizardTower
+    wHref3 = h_scatterShot
+}
+
+else if(Number == 37){
+    sImg = r_airDefence
+    sImg2 = ""
+    sImg3 = ""
+    sHref = h_airDefence
+    sHref2 = ""
+    sHref3 = ""
+    wImg = r_airDefence
+    wImg2 = r_seekingAirMine
+    wImg3 = r_infernoTower
+    wHref = h_airDefence
+    wHref2 = h_seekingAirMine
+    wHref3 = h_infernoTower
+}
+
+else if(Number == 38){
+    sImg = r_infernoTower
+    sImg2 = r_bombTower
+    sImg3 = r_airDefence
+    sHref = h_infernoTower
+    sHref2 = h_bombTower
+    sHref3 = h_airDefence
+    wImg = r_eagleArtillery
+    wImg2 = r_scatterShot
+    wImg3 = ""
+    wHref = h_eagleArtillery
+    wHref2 = h_scatterShot
+    wHref3 = ""
+}
+
+else if(Number == 39){
+    sImg = r_wall
+    sImg2 = r_eagleArtillery
+    sImg3 = r_airDefence
+    sHref = h_wall
+    sHref2 = h_eagleArtillery
+    sHref3 = h_airDefence
+    wImg = r_scatterShot
+    wImg2 = r_giantBomb
+    wImg3 = ""
+    wHref = h_scatterShot
+    wHref2 = h_giantBomb
+    wHref3 = ""
+}
+
+else if(Number == 40){
+    sImg = r_airDefence
+    sImg2 = r_archerTower
+    sImg3 = r_cannon
+    sHref = h_airDefence
+    sHref2 = r_archerTower
+    sHref3 = r_cannon
+    wImg = r_eagleArtillery
+    wImg2 = r_Xbow
+    wImg3 = r_wizardTower
+    wHref = h_eagleArtillery
+    wHref2 = h_Xbow
+    wHref3 = h_wizardTower
+}
+
+else if(Number == 41){
+    sImg = r_scatterShot
+    sImg2 = r_bombTower
+    sImg3 = r_wizardTower
+    sHref = h_scatterShot
+    sHref2 = h_bombTower
+    sHref3 = h_wizardTower
+    wImg = ""
+    wImg2 = ""
+    wImg3 = ""
+    wHref = ""
+    wHref2 = ""
+    wHref3 = ""
+}
+else if(Number == 42){
+    sImg = ""
+    sImg2 = ""
+    sImg3 = ""
+    sHref = ""
+    sHref2 = ""
+    sHref3 = ""
+    wImg = ""
+    wImg2 = ""
+    wImg3 = ""
+    wHref = ""
+    wHref2 = ""
+    wHref3 = ""
+}
+else if(Number == 43){
+    sImg = r_wall
+    sImg2 = ""
+    sImg3 = ""
+    sHref = h_wall
+    sHref2 = ""
+    sHref3 = ""
+    wImg = ""
+    wImg2 = ""
+    wImg3 = ""
+    wHref = ""
+    wHref2 = ""
+    wHref3 = ""
+}
+else if(Number == 44){
+    sImg = r_infernoTower
+    sImg2 = r_eagleArtillery
+    sImg3 = r_airDefence
+    sHref = h_infernoTower
+    sHref2 = h_eagleArtillery
+    sHref3 = h_airDefence
+    wImg = r_wall
+    wImg2 = r_archerTower
+    wImg3 = r_cannon
+    wHref = h_wall
+    wHref2 = h_archerTower
+    wHref3 = h_cannon
+}
+else if(Number == 45){
+    sImg = ""
+    sImg2 = ""
+    sImg3 = ""
+    sHref = ""
+    sHref2 = ""
+    sHref3 = ""
+    wImg = ""
+    wImg2 = ""
+    wImg3 = ""
+    wHref = ""
+    wHref2 = ""
+    wHref3 = ""
+}
+else if(Number == 46){
+    sImg = r_infernoTower
+    sImg2 = r_scatterShot
+    sImg3 = r_eagleArtillery
+    sHref = h_infernoTower
+    sHref2 = h_scatterShot
+    sHref3 = h_eagleArtillery
+    wImg = r_wall
+    wImg2 = ""
+    wImg3 = ""
+    wHref = r_wall
+    wHref2 = ""
+    wHref3 = ""
+}
+else if(Number == 47){
+    sImg = ""
+    sImg2 = ""
+    sImg3 = ""
+    sHref = ""
+    sHref2 = ""
+    sHref3 = ""
+    wImg = ""
+    wImg2 = ""
+    wImg3 = ""
+    wHref = "" 
+    wHref2 = ""
+    wHref3 = ""
+}
+else if(Number == 48){
+    sImg = ""
+    sImg2 = ""
+    sImg3 = ""
+    sHref = ""
+    sHref2 = ""
+    sHref3 = ""
+    wImg = ""
+    wImg2 = ""
+    wImg3 = ""
+    wHref = ""
+    wHref2 = ""
+    wHref3 = ""
+}
+else if(Number == 49){
+    sImg = r_wall
+    sImg2 = ""
+    sImg3 = ""
+    sHref = h_wall
+    sHref2 = ""
+    sHref3 = "" 
+    wImg = ""
+    wImg2 = ""
+    wImg3 = ""
+    wHref = ""
+    wHref2 = ""
+    wHref3 = ""
+}
+else if(Number == 50){
+    sImg = ""
+    sImg2 = ""
+    sImg3 = ""
+    sHref = ""
+    sHref2 = ""
+    sHref3 = ""
+    wImg = ""
+    wImg2 = ""
+    wImg3 = ""
+    wHref = ""
+    wHref2 = ""
+    wHref3 = ""
+}
+else if(Number == 51){
+    sImg = r_infernoTower
+    sImg2 = r_eagleArtillery
+    sImg3 = r_airDefence
+    sHref = h_infernoTower
+    sHref2 = h_eagleArtillery
+    sHref3 = h_airDefence
+    wImg = r_wizardTower
+    wImg2 = ""
+    wImg3 = ""
+    wHref = r_wizardTower
+    wHref2 = ""
+    wHref3 = ""
+}
+
+else if(Number == 52){
+    sImg = r_infernoTower
+    sImg2 = r_airDefence
+    sImg3 = r_eagleArtillery
+    sHref = h_infernoTower
+    sHref2 = h_airDefence
+    sHref3 = r_eagleArtillery
+    wImg = r_wizardTower
+    wImg2 = ""
+    wImg3 = ""
+    wHref = h_wizardTower
+    wHref2 = ""
+    wHref3 = ""
+}
 
 
 // Update the image source and troop name on the page
@@ -85,3 +903,43 @@ h1Element.textContent = troopName;
     
 const pElement = document.querySelector('#troop-info');
 pElement.textContent = troopInfo;
+
+//_____________________________________________________
+const imgElement1 = document.querySelector('#s-img');
+imgElement1.src = sImg;
+
+const imgElement2 = document.querySelector('#s-img2');
+imgElement2.src = sImg2;
+
+const imgElement3 = document.querySelector('#s-img3');
+imgElement3.src = sImg3;
+//_____________________________________________________
+
+const hrefElement1 = document.querySelector('#s-href');
+hrefElement1.href = sHref;
+
+const hrefElement2 = document.querySelector('#s-href2');
+hrefElement2.href = sHref;
+
+const hrefElement3 = document.querySelector('#s-href3');
+hrefElement3.href = sHref;
+//________________________________________________________
+
+const imgElement4 = document.querySelector('#w-img');
+imgElement4.src = wImg;
+
+const imgElement5 = document.querySelector('#w-img2');
+imgElement5.src = wImg2;
+
+const imgElement6 = document.querySelector('#w-img3');
+imgElement6.src = wImg3;
+//_________________________________________________________
+
+const hrefElement4 = document.querySelector('#w-href');
+hrefElement4.href = wHref;
+
+const hrefElement5 = document.querySelector('#w-href2');
+hrefElement5.href = wHref2;
+
+const hrefElement6 = document.querySelector('#w-href3');
+hrefElement6.href = wHref3;
