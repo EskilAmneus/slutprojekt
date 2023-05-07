@@ -21,11 +21,11 @@
             </div>
             <div class="top-bar-box">
                 <div class="button-box">
-                    <button class="button1"> <img class="button-img" src="bilder/barb-king.webp" alt="bilder/barb-king.webp"></button>
-                    <button class="button1"> <img class="button-img" src="bilder/cannon.png" alt="bilder/cannon.png"></button>
-                    <button class="button1"> <img class="button-img" src="bilder/builder-hall.webp" alt="bilder/builder-hall.webp"></button>
-                    <button class="button1"> <img class="button-img" src="bilder/town-hall.webp" alt="bilder/town-hall.webp"></button>
-                    <button class="button1"> <img class="button-img" src="bilder/capital-hall.webp" alt="bilder/capital-hall.webp"></button>
+                    <a href="#middle-box" class="button"> <img class="button-img" src="bilder/barb-king.webp" alt="bilder/barb-king.webp"></a>
+                    <a href="#arme" class="button"> <img class="button-img" src="bilder/cannon.png" alt="bilder/cannon.png"></a>
+                    <a href="#försvar" class="button"> <img class="button-img" src="bilder/builder-hall.webp" alt="bilder/builder-hall.webp"></a>
+                    <a href="#builder-base" class="button"> <img class="button-img" src="bilder/town-hall.webp" alt="bilder/town-hall.webp"></a>
+                    <a href="#rådhus" class="button"> <img class="button-img" src="bilder/capital-hall.webp" alt="bilder/capital-hall.webp"></a>
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
     
 
     
-        <a href="clan-capital-page" class="content-container5"> 
+        <a href="clan-capital-page.html" class="content-container5"> 
             <div class="box-text" id="klan-huvudstad"> <h1>Klanens Huvudstad</h1></div>
         </a>
 
@@ -69,7 +69,16 @@
 
     </div>
     
-    
+    <button onclick="scrollToTop()" class="scroll-top-button">Tillbaka till toppen</button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
     
 </body>
 </html>

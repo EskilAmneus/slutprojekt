@@ -11,7 +11,7 @@
 <body>
     <div class="top-box" id="defence-box">
         <a href="army-page.html" class="button">Armé</a>
-        <a href="index.html" class="button">Tillbaka</a>
+        <a href="index.html" class="button">Hem</a>
     </div>
     <div class="page-container2">
         <div class="rect" id="buildings">
@@ -51,6 +51,16 @@
         </div>
     </div>
 
+    <button onclick="scrollToTop()" class="scroll-top-button">Tillbaka till toppen</button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
 
 </body>
 </html>
