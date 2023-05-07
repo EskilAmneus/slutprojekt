@@ -410,6 +410,65 @@ h1{
 
 
 
+
+.town-hall-bar{
+    height: 10vh;
+    width: 100vw;
+    background-color: #423c3c;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.town-hall-box{
+    height: 50vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+.box-half{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.troop-img-box2{
+    width: 400px;
+    height: 400px;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.scroll-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.scroll-top-button:hover {
+    background-color: #777;
+}
+
+
+
+
+
 @media(max-width:1279px){
     .main-img-box{
         height: auto;
@@ -460,8 +519,17 @@ h1{
     #troop-info{
         font-size: 16px;
     }
-    
-
+    .town-hall-box{
+        flex-direction: column;
+    }
+    .box-half{
+        width: 95%;
+        height: 45%;
+    }
+    .troop-img-box2{
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media (max-width:700px){
@@ -486,6 +554,7 @@ h1{
     #troop-header{
         font-size: 20px;
     }
+    
 }
 
 
