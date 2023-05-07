@@ -381,6 +381,10 @@ h1{
     padding-bottom: 2%;
 }
 
+#pe-button{
+    font-size: 30px;
+}
+
 .box-row{
     margin-top: 5%;
     width: 100%;
@@ -471,6 +475,12 @@ h1{
     #troop-info{
         font-size: 15px;
     }
+    #pe-button{
+        font-size: 20px;
+    }
+    #troop-header{
+        font-size: 20px;
+    }
 }
 
 
@@ -502,6 +512,7 @@ h1{
     
     
     
+    
 }
 
 @media(max-width:380px){
@@ -509,6 +520,6 @@ h1{
         height: 65px;
     }
     #troop-info{
-        font-size: 14px;
+        font-size: 10px;
     }
 }
