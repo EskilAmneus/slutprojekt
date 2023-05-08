@@ -321,7 +321,7 @@ h1{
 
 
 .img-box2{
-    height: 20%;
+    height: 20vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -346,15 +346,15 @@ h1{
 
 
 .container{
-    height: 64.429%;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .half-box{
-    height: 95%;
+    height: auto;
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -363,6 +363,7 @@ h1{
     border-color: black;
     border-style: solid;
     background-color: #423c3c;
+    margin: 2%;
 }
 
 
@@ -373,14 +374,16 @@ h1{
 #top-bar-army{
     display: flex;
     justify-content: space-around;
+    height: 10vh;
 }
 
 #troop-info{
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
     text-align: center;
 }
 
@@ -506,6 +509,9 @@ h1{
     
 }
 
+
+
+
 @media(max-width:1279px){
     .main-img-box{
         height: auto;
@@ -526,7 +532,7 @@ h1{
         height: 170vh;
     }
     #troop-info{
-        font-size: 14px
+        font-size: 18px
     }
 }
 
@@ -545,20 +551,19 @@ h1{
     }
     .container{
         flex-direction: column;
+        justify-content: flex-start;
     }
     .half-box{
         width: 100%;
-        height: 50%;
+        margin-bottom: 5%;
     }
     .page-container4{
         height: 220vh;
     }
     .img-box2{
-        height: 10%;
+        height: 10vh;
     }
-    #troop-info{
-        font-size: 12px;
-    }
+    
     .town-hall-box{
         flex-direction: column;
     }
@@ -590,9 +595,6 @@ h1{
     }
     .page-container4{
         height: 270vh;
-    }
-    #troop-info{
-        font-size: 10px;
     }
     #pe-button{
         font-size: 20px;
@@ -652,9 +654,6 @@ h1{
 @media(max-width:380px){
     .troop-img-box{
         height: 65px;
-    }
-    #troop-info{
-        font-size: 8px;
     }
    
     #content-container{
