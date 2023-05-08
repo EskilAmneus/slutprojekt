@@ -391,7 +391,7 @@ h1{
     padding-bottom: 2%;
 }
 
-#pe-button{
+.pe-button{
     font-size: 30px;
 }
 
@@ -596,7 +596,7 @@ h1{
     .page-container4{
         height: 270vh;
     }
-    #pe-button{
+    .pe-button{
         font-size: 20px;
     }
     #troop-header{
