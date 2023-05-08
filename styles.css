@@ -382,7 +382,7 @@ h1{
     height: 10vh;
 }
 
-#troop-info{
+.troop-info{
     color: white;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -536,7 +536,7 @@ h1{
     .page-container4{
         height: 170vh;
     }
-    #troop-info{
+    .troop-info{
         font-size: 18px
     }
 }

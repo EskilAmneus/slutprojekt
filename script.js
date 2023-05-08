@@ -1338,7 +1338,7 @@ imgElement.src = imageSrc;
 const h1Element = document.querySelector('#troop-text h1');
 h1Element.textContent = troopName;
     
-const pElement = document.querySelector('#troop-info');
+const pElement = document.querySelector('.troop-info');
 pElement.textContent = troopInfo;
 
 //_____________________________________________________
