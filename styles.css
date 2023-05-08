@@ -377,7 +377,7 @@ h1{
 
 #troop-info{
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 5%;
     margin-right: 5%;
@@ -526,7 +526,7 @@ h1{
         height: 170vh;
     }
     #troop-info{
-        font-size: 17px
+        font-size: 14px
     }
 }
 
@@ -557,7 +557,7 @@ h1{
         height: 10%;
     }
     #troop-info{
-        font-size: 16px;
+        font-size: 12px;
     }
     .town-hall-box{
         flex-direction: column;
@@ -592,7 +592,7 @@ h1{
         height: 270vh;
     }
     #troop-info{
-        font-size: 15px;
+        font-size: 10px;
     }
     #pe-button{
         font-size: 20px;
@@ -654,7 +654,7 @@ h1{
         height: 65px;
     }
     #troop-info{
-        font-size: 10px;
+        font-size: 8px;
     }
    
     #content-container{
