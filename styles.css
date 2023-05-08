@@ -229,6 +229,8 @@ h1{
     display: flex;
     justify-content: center;
     height: 10vh;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .rect{
@@ -273,6 +275,9 @@ h1{
 .top-box{
     width: 100vw;
     height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 #elixir-troops{
@@ -363,7 +368,7 @@ h1{
     border-color: black;
     border-style: solid;
     background-color: #423c3c;
-    margin: 2%;
+    margin: 1vw;
 }
 
 
@@ -407,7 +412,7 @@ h1{
 
 #defence-box{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 2%;
     background-color: #423c3c;
     height: 10vh;
@@ -554,8 +559,10 @@ h1{
         justify-content: flex-start;
     }
     .half-box{
-        width: 100%;
+        width: 98%;
         margin-bottom: 5%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     .page-container4{
         height: 220vh;
@@ -596,9 +603,7 @@ h1{
     .page-container4{
         height: 270vh;
     }
-    .pe-button{
-        font-size: 20px;
-    }
+    
     #troop-header{
         font-size: 20px;
     }
@@ -618,6 +623,9 @@ h1{
     .button{
         width: 40px;
         font-size: 10px;
+    }
+    .pe-button{
+        font-size: 30px;
     }
     .button1{
         width: 40px;
@@ -658,5 +666,9 @@ h1{
    
     .content-container{
         margin-bottom: 35%
+    }
+
+    .pe-button{
+        font-size: 20px;
     }
 }
