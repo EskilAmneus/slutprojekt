@@ -266,6 +266,7 @@ h1{
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 2vh;
 }
 
 .troop-img-box{
