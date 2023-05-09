@@ -196,7 +196,13 @@ h1{
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     justify-content: center;
-    text-shadow: 5px, 5px, black;
+    
+}
+
+.title{
+    color: black;
+    text-decoration:underline;
+    text-align: center;
 }
 
 .bottom-box-container{
