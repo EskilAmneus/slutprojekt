@@ -701,6 +701,9 @@ h2{
         width: 80px;
         height: 80px;
     }
+    .troop-img{
+        padding: 0%;
+    }
 }
     
     
@@ -713,7 +716,7 @@ h2{
         font-size: 20px;
     }
     .troop-img-box3{
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
 }
