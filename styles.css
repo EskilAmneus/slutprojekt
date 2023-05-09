@@ -269,8 +269,8 @@ h1{
 }
 
 .troop-img-box{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     padding-left: 2%;
     padding-top: 1%;
     padding-right: 2%;
@@ -293,7 +293,7 @@ h1{
 .troop-img{
     width: auto;
     height: 100%;
-    max-width: 100px;
+    max-width: 120px;
 }
   
 .top-box{
